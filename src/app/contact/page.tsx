@@ -24,10 +24,10 @@ export default function ContactPage() {
       if (!res.ok) throw new Error(await res.text());
       setOk(true);
       (e.currentTarget as HTMLFormElement).reset();
-    } catch (e:any) {
-      setErr(e?.message ?? "送出失敗");
+    } catch (err: unknown) {
+        setErr(err instanceof Error ? err.message : String(err));
     } finally {
-      setLoading(false);
+        setLoading(false);
     }
   }
 
