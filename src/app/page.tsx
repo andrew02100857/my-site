@@ -5,35 +5,46 @@ export default function Home() {
   return (
     <div className="relative min-h-screen flex items-center justify-center">
       {/* 背景圖片層 */}
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: "url('building-background.jpg')",
-          filter: "brightness(0.1)"
+          filter: "brightness(0.35)", // 背景更暗更灰
         }}
       />
-      
+
       {/* 左側導航 */}
       <nav className="fixed left-0 top-0 h-full bg-black/90 backdrop-blur-sm p-6 z-20 hidden md:block">
         <Link href="/" className="block mb-12">
           <div className="bg-black border-2 border-white px-4 py-2">
-            <span className="text-white font-bold text-sm tracking-widest">DRAMA TECH</span>
+            <span className="text-white font-bold text-sm tracking-widest">
+              DRAMA TECH
+            </span>
           </div>
         </Link>
-        
+
         <ul className="space-y-6 text-white">
           <li>
-            <Link href="#about" className="hover:text-orange-500 transition-colors text-sm font-medium">
+            <Link
+              href="#about"
+              className="hover:text-orange-500 transition-colors text-sm font-medium"
+            >
               關於抓馬
             </Link>
           </li>
           <li>
-            <Link href="#services" className="hover:text-orange-500 transition-colors text-sm font-medium">
+            <Link
+              href="#services"
+              className="hover:text-orange-500 transition-colors text-sm font-medium"
+            >
               服務介紹
             </Link>
           </li>
           <li>
-            <Link href="#contact" className="hover:text-orange-500 transition-colors text-sm font-medium">
+            <Link
+              href="#contact"
+              className="hover:text-orange-500 transition-colors text-sm font-medium"
+            >
               聯絡我們
             </Link>
           </li>
@@ -43,13 +54,14 @@ export default function Home() {
       {/* 主要內容 */}
       <div className="relative z-10 flex items-center justify-center">
         {/* 中央 Logo 圖片 */}
-        <div className="bg-black px-12 py-8 rounded-lg">
-          <img 
-            src="logo.png" 
-            alt="DRAMA TECH Logo" 
-            className="w-auto h-24 md:h-32 object-contain"
+        <div className="bg-black/80 px-10 py-6 rounded-lg shadow-lg">
+          <img
+            src="logo.png"
+            alt="DRAMA TECH Logo"
+            className="w-auto h-20 md:h-28 object-contain"
           />
         </div>
       </div>
+    </div>
   );
 }
