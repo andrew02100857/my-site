@@ -9,7 +9,7 @@ export default function Home() {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: "url('building-background.jpg')",
-          filter: "brightness(0.4)"
+          filter: "brightness(0.1)"
         }}
       />
       
