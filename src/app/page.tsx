@@ -9,7 +9,7 @@ export default function Home() {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: "url('building-background.jpg')",
-          filter: "brightness(0.6)"
+          filter: "brightness(0.4)"
         }}
       />
       
@@ -43,14 +43,13 @@ export default function Home() {
       {/* 主要內容 */}
       <div className="relative z-10 flex items-center justify-center">
         {/* 中央 Logo 圖片 */}
-        <div className="bg-black px-16 py-12 rounded-lg">
+        <div className="bg-black px-12 py-8 rounded-lg">
           <img 
             src="logo.png" 
             alt="DRAMA TECH Logo" 
-            className="w-auto h-48 md:h-64 object-contain"
+            className="w-auto h-24 md:h-32 object-contain"
           />
         </div>
       </div>
-    </div>
   );
 }
