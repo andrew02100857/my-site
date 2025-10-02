@@ -8,7 +8,7 @@ export default function Home() {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url('/building-background.jpg')",
+          backgroundImage: "url('building-background.jpg')",
           filter: "brightness(0.6)"
         }}
       />
@@ -45,7 +45,7 @@ export default function Home() {
         {/* 中央 Logo 圖片 */}
         <div className="bg-black px-16 py-12 rounded-lg">
           <img 
-            src="/logo.png" 
+            src="logo.png" 
             alt="DRAMA TECH Logo" 
             className="w-auto h-48 md:h-64 object-contain"
           />
